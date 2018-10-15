@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoHouse</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet/less" href="styles/main_all.less">
+    <script src="js/less.min.js"></script>
+</head>
+
+<body>
+
+    <!--HEAD-->
+
+    <header class="thanks">
+        <nav class="navigation" id="nav">
+            <div class="nav_wraper">
+                <div class="logo">
+                    <img src="images/headerANDnav/LOGO.png" alt="logo">
+                </div>
+             
+                    <ul>
+                        <li><a href="index.html">ГОЛОВНА</a></li>
+                        <li><a href="auto.html">АВТО В НАЯВНОСТІ</a></li>
+                        <li><a href="pokupka.html">ПОКУПКА</a></li>
+                        <li><a href="contacts.html">КОНТАКТИ</a></li>
+                    </ul>
+               
+            </div>
+        </nav>
+
+        <div class="thanks_wraper">
+            <div class="information_box">
+                <h1>ДЯКУЄМО ЗА ЗАЯВКУ</h1>
+            </div>
+            <p>Ваша заявка прийнята. Скоро наш менеджер з Вами звяжеться для вирішення всіх питаннь, які Вас цікавлять.</p>
+            <div class="but_hed">
+                <a href="index.html"><p>НА ГОЛОВНУ</p></a>
+            </div>
+        </div>
+    </header>
+
+
+    
+
+    <!--FOOTER-->
+
+
+    <footer>
+        <div class="foot_section">
+            <div class="foot_wraper">
+                <div class="logo_foot">
+                    <img src="images/headerANDnav/LOGO_footer.png" alt="ft_logo">
+                </div>
+                <div class="foot_nav">
+                    <ul>
+                        <p>НАВІГАЦІЯ</p>
+                        <li><a href="">ГОЛОВНА</a></li>
+                        <li><a href="">АВТО В НАЯВНОСТІ</a></li>
+                        <li><a href="">ПОКУПКА</a></li>
+                        <li><a href="">КОНТАКТИ</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <p>КОНТАКТИ</p>
+                        <li>+38 (096) 090 77 00</li>
+                        <li>OFFICE@AUTOHOUSE.LVIV.UA</li>
+                        <li>FACEBOOK</li>
+                        <li>INSTAGRAM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > 500) {
+                nav.classList.add("fix");
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

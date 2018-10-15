@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoHouse</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet/less" href="styles/main_all.less">
+    <script src="js/less.min.js"></script>
+</head>
+
+<body>
+
+    <!--HEAD-->
+
+    <header class="cont">
+        <nav class="navigation" id="nav">
+            <div class="nav_wraper">
+                <div class="logo">
+                    <img src="images/headerANDnav/LOGO.png" alt="logo">
+                </div>
+             
+                    <ul>
+                        <li><a href="index.html">ГОЛОВНА</a></li>
+                        <li><a href="auto.html">АВТО В НАЯВНОСТІ</a></li>
+                        <li><a href="pokupka.html">ПОКУПКА</a></li>
+                        <li><a href="contacts.html">КОНТАКТИ</a></li>
+                    </ul>
+               
+            </div>
+        </nav>
+
+        <div class="cont_wraper">
+            <div class="information_box">
+                <h1>КОНТАКТИ</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <!--MAIN-->
+    <div class="position"> <h4>Головна→<span>Контакти</span></h4></div>
+    
+    <div class="cont_info">
+       <div class="info_wraper">
+           <ul>Телефон
+               <li>+38 (096) 090 77 00</li>
+           </ul>
+           <ul>Адресса
+               <li>Львівська область<br>с.Сокільники<br>вул.Скнилівська 23</li>
+           </ul>
+           <ul>Email
+               <li>office@autohouse.lviv.ua</li>
+           </ul>
+           <ul>Соціальні мережі
+               <li>Facebook<br>Instagram</li>
+           </ul>
+         
+       </div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.577685238805!2d23.972115715708373!3d49.81280677939252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae70cb72fd69b%3A0x36a24b8fb40a267d!2z0LLRg9C70LjRhtGPINCh0LrQvdC40LvRltCy0YHRjNC60LAsIDIzLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1539589909464" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+    
+ 
+   
+
+    <!--FOOTER-->
+
+
+    <footer>
+        <div class="form_section">
+            <div class="form_wraper">
+                <div class="form_box">
+                    <h1>Не гайте часу на самостійні пошуки</h1>
+                    <p>Залиште нам свої контакти і ми відразу розкажемо Вам все, що Вас цікавить</p>
+                    <input type="name" placeholder="Ім'я">
+                    <input type="email" placeholder="Номер телефону або пошта">
+                    <textarea placeholder="Коментар"></textarea>
+                    <a href="thanks.html">
+                    <input type="submit" value="НАДІСЛАТИ" name="send" >
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot_section">
+            <div class="foot_wraper">
+                <div class="logo_foot">
+                    <img src="images/headerANDnav/LOGO_footer.png" alt="ft_logo">
+                </div>
+                <div class="foot_nav">
+                    <ul>
+                        <p>НАВІГАЦІЯ</p>
+                        <li><a href="index.html">ГОЛОВНА</a></li>
+                        <li><a href="auto.html">АВТО В НАЯВНОСТІ</a></li>
+                        <li><a href="pokupka.html">ПОКУПКА</a></li>
+                        <li><a href="contacts.html">КОНТАКТИ</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <p>КОНТАКТИ</p>
+                        <li>+38 (096) 090 77 00</li>
+                        <li>OFFICE@AUTOHOUSE.LVIV.UA</li>
+                        <li>FACEBOOK</li>
+                        <li>INSTAGRAM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > 500) {
+                nav.classList.add("fix");
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

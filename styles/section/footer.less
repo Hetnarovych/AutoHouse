@@ -1,0 +1,149 @@
+.form_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/fotter/foot_back.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    font-family: Open-Sans, sans-serif;
+
+    .form_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 50px;
+
+        .form_box {
+            width: 360px;
+            height: 750px;
+            background-image: linear-gradient(to top, rgba(170, 170, 170, 0.4), rgba(170, 170, 170, 0.4));
+            margin-top: 110px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 100px 0 100px;
+            color: white;
+
+            h1 {
+                font-size: 40px;
+                text-transform: uppercase;
+                margin-bottom: 68px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 60px;
+            }
+
+            input[type="name"] {
+                width: 90%;
+                min-height: 46px;
+                border-radius: 30px;
+                border: none;
+                margin-bottom: 30px;
+                padding: 0 0 0 40px;
+
+                &::-webkit-input-placeholder {
+                    color: gray;
+                    font-family: Agency FB;
+                    font-size: 18px;
+                }
+            }
+
+            input[type="email"] {
+                width: 90%;
+                min-height: 46px;
+                border-radius: 30px;
+                border: none;
+                margin-bottom: 30px;
+                padding: 0 0 0 40px;
+
+                &::-webkit-input-placeholder {
+                    color: gray;
+                    font-family: Agency FB;
+                    font-size: 18px;
+                }
+            }
+
+            textarea {
+                min-height: 176px;
+                border-radius: 30px;
+                resize: none;
+                margin-bottom: 30px;
+                padding: 20px 0 0 40px;
+
+                &::-webkit-input-placeholder {
+                    color: gray;
+                    font-family: Agency FB;
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                align-self: center;
+                input[type="submit"] {
+                    width: 160px;
+                    min-height: 46px;
+                    border-radius: 30px;
+                    border: none;
+                    margin-bottom: 30px;
+                    align-self: center;
+                    background-color: #ff6c00;
+                    color: white;
+                    cursor: pointer;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+.foot_section {
+    background-color: #4d5a6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open-Sans, sans-serif;
+
+    .foot_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo_foot {
+            margin: 30px 30px;
+        }
+
+        ul {
+            margin: 0 30px;
+
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            li {
+                margin: 10px 0;
+                font-size: 10px;
+                color: white;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

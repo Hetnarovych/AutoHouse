@@ -1,0 +1,94 @@
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/headerANDnav/header_back.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Open-Sans, sans-serif;
+
+    .head_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .information_box {
+            width: 620px;
+            height: 330px;
+            background-image: linear-gradient(to top, rgba(200, 202, 209, 0.12), rgba(200, 202, 209, 0.12));
+            margin-top: 208px;
+            margin-bottom: 238px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 30px;
+            color: white;
+
+            h1 {
+                margin-top: 16px;
+                margin-bottom: 64px;
+                font-size: 56px;
+                font-weight: 600;
+            }
+
+            h2 {
+                margin-bottom: 36px;
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, rgba(200, 202, 209, 0.4), rgba(200, 202, 209, 0.4));
+
+        .nav_wraper {
+            .wraper;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img[alt="logo"] {
+                margin-left: 112px;
+                margin-top: 18px;
+                margin-bottom: 22px;
+            }
+
+            ul {
+                margin-right: 65px;
+
+                li {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: white;
+
+                        &:hover {
+                            color: #ff6c00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

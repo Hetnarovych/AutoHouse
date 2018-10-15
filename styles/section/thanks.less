@@ -1,0 +1,116 @@
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/pocupka/pocupkaSec.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Open-Sans, sans-serif;
+
+    .thanks_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .information_box {
+            width: 640px;
+            height: 100px;
+            background-image: linear-gradient(to top, rgba(200, 202, 209, 0.22), rgba(200, 202, 209, 0.22));
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            h1 {
+                font-size: 56px;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            color: white;
+            width: 42%;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 56px;
+        }
+
+        .but_hed {
+            width: 160px;
+            height: 30px;
+            border: 1px solid #ff6c00;
+            border-radius: 30px;
+            margin-bottom: 90px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: #ff6c00;
+                font-weight: 600;
+                font-size: 12px;
+                margin: 0 0;
+                white-space: nowrap;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: #ff6c00;
+
+                p {
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, rgba(200, 202, 209, 0.4), rgba(200, 202, 209, 0.4));
+
+        .nav_wraper {
+            .wraper;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img[alt="logo"] {
+                margin-left: 112px;
+                margin-top: 18px;
+                margin-bottom: 22px;
+            }
+
+            ul {
+                margin-right: 65px;
+
+                li {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: white;
+
+                        &:hover {
+                            color: #ff6c00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
