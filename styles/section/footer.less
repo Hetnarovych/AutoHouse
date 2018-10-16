@@ -87,6 +87,7 @@
 
             a {
                 align-self: center;
+
                 input[type="submit"] {
                     width: 160px;
                     min-height: 46px;
@@ -143,6 +144,64 @@
                     color: white;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form_section {
+        background-attachment: local;
+        background-size: cover;
+
+        .form_wraper {
+            justify-content: center;
+            align-items: center;
+
+            .form_box {}
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form_section {
+        background-attachment: local;
+        background-size: cover;
+
+        .form_wraper {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+
+            .form_box {
+                width: 80%;
+                margin: 20px auto;
+                padding: 20px;
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .foot_section {
+        .foot_wraper {
+            align-items: flex-start;
+
+            .logo_foot {
+                display: none;
+
+                img[alt="ft_logo"] {
+                    width: 50%;
+                    margin: 0;
+                }
+            }
+
+            ul {
+                margin: 10px 20px;
             }
         }
     }
